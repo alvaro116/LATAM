@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root{
+    --color-primario:#5f5d9c;
+    --color-primario-secundario: #6196a6;
+    --color-primario-terciario:#a4ce95;
+    --color-hover:#272727;
+
+    --fuente-monserrat:'monserrat', sans serif;
+    --fuente-krona:'krona one', sans serif;
+}
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    color: var(--color-primario-secundario);
+    color: #F6F6F6;
+}
+
+
+.header{
+    padding: 2% 0% 0% 15%;
+
+}
+
+.header_menu{
+    display: flex;
+    gap: 80px;
+
+}
+
+
+.header_menu_link{
+
+    font-family: var(--fuente-monserrat);
+    font-size: 24px; 
+    font-weight: 600;
+    color: var(--color-primario-terciario);
+    text-decoration: none;
+}
+
+
+.presentacion {
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo-destaque{
+    color: var(--color-primario-terciario);
+}
+
+
+
+.presentacion__contenido{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__titulo{
+    font-size: 36px;
+    font-family: var(--fuente-krona)
+}
+
+.presentacion__contenido__texto{
+    font-size: 24px;
+    font-family: var(--fuente-monserrat)
+
+}
+
+.presentacion__enlaces{
+    display: flex; /*define el contenedor donde estan los elementos*/
+    justify-content: space-between; /*Alinea y distribuye los elementos flex a lo largo del eje principal del contenedor flex.*/
+    flex-direction: column;    
+    align-items: center;  
+    gap: 38px;                            
+}
+
+.presentacion__enlaces_subtitulo{
+    font-family: var(--fuente-krona);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.presentacion__enlaces__link {
+    background-color: #011418;
+    width: 280px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-primario-secundario);
+    font-family: var(--fuente-monserrat);
+    border: 2px solid var(--color-primario-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.presentacion__enlaces__link:hover{ /* la etiqueta HOVER es para dar efecto*/
+    background-color: var(--color-hover)
+}
+
+@media (max-width: 1200px){ /*sirve para adactar la pagina dispositivos como celulares*/
+   
+}
+
+.header{
+    padding: 10%;
+}
+
+.header_menu{
+    justify-content: center;
+}
+
+.presentacion{
+    flex-direction:column-reverse; /*esta opcion sirve para ubicar una imagen a nivel superior de la pantalla*/
+    padding: 5%;
+
+}
+
+.presentacion__contenido { /* <section class="presentacion__contenido">* con este codigo de html
+    la funcion width es para ubicar el texto a lo lago o corto en la pagina*/
+    width:auto;
+}
+
+.presentacion_imagem {
+    width: 20%; /*cambia el tamaño de la imagen */
+    height: 0%;  /*cambia la altura de la imagen */
+}
+
+.footer{
+    background-color: var(--color-primario-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-monserrat);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
